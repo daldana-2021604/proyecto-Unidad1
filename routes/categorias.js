@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const { check } = require('express-validator');
 const { login } = require('../controllers/auth');
-const { obtenerCategorias, obtenerCategoriasPorId, elimiarCategoria, actualizarCategorias, crearCategorias, eliminarCategoria } = require('../controllers/categoria');
+const { obtenerCategorias, obtenerCategoriasPorId, actualizarCategorias, crearCategorias, eliminarCategoria } = require('../controllers/categoria');
 const { esRoleValido, existeCategoriaPorId } = require('../helpers/db-validators');
 const { validarCampos } = require('../middlewares/validar-campos');
 const { validarJWT } = require('../middlewares/validar-jwt');
